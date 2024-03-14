@@ -58,8 +58,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-        <button className="bg-red-500 text-white py-2 px-4 rounded-lg font-medium hover:bg-red-600 duration-200">
-          JOIN Now
+        <button className="bg-blue-500 uppercase text-white py-2 px-4 rounded-lg font-medium hover:bg-blue-400 duration-200">
+          join Now
         </button>
       </div>
     </div>

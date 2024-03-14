@@ -3,7 +3,7 @@ import { CgDollar } from "react-icons/cg";
 import { FaRegBookmark } from "react-icons/fa6";
 import { AiFillForward } from "react-icons/ai";
 
-const Course = ({ course }) => {
+const Course = ({ course, handleCourseSelection }) => {
   const { name, photo, price, credit, description } = course;
 
   return (
@@ -25,8 +25,11 @@ const Course = ({ course }) => {
           </p>
         </div>
         <div className="card-actions mt-8 flex justify-end ">
-          <button className="bg-blue-400 text-white w-full flex justify-center items-center gap-2 py-3 px-4 rounded-lg font-medium hover:bg-blue-500 duration-200">
-            Buy Now <AiFillForward />
+          <button
+            onClick={() => handleCourseSelection(course)}
+            className="bg-blue-400 uppercase text-white w-full flex justify-center items-center gap-2 py-3 px-4 rounded-lg font-medium hover:bg-blue-500 duration-200"
+          >
+            select <AiFillForward />
           </button>
         </div>
       </div>
@@ -36,6 +39,7 @@ const Course = ({ course }) => {
 
 Course.propTypes = {
   course: PropTypes.object,
+  handleCourseSelection: PropTypes.func,
 };
 
 export default Course;
