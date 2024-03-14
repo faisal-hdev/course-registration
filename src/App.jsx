@@ -5,7 +5,6 @@ import Courses from "./components/Courses/Courses";
 import Navbar from "./components/Navbar/Navbar";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
 export const totalCredit = 15;
 
 function App() {
@@ -27,7 +26,6 @@ function App() {
       toast.success("Course added!");
     }
   };
-
   return (
     <>
       <div>
