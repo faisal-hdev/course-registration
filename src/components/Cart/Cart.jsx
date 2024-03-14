@@ -2,10 +2,9 @@ import PropTypes from "prop-types";
 import { totalCredit } from "../../App";
 
 const Cart = ({ carts }) => {
-  // console.log(carts);
   const credits = carts.reduce((p, c) => p + c.credit, 0);
   return (
-    <div className="w-full h-full md:w-[25%] py-10 px-4 border-2 shadow-lg rounded-2xl">
+    <div className="w-full h-full md:w-[25%] bg-blue-50 py-10 px-4 border-2 shadow-lg rounded-2xl">
       <h1 className="text-xl border-b-2 border-gray-200 pb-3">
         Credit Hour Remaining : {totalCredit - credits}
       </h1>
