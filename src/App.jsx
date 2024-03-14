@@ -7,15 +7,9 @@ function App() {
     <>
       <div>
         <Navbar />
-        <div className="container mx-auto max-sm:px-4">
-          <div className="flex flex-col md:flex-row gap-6 my-10 md:my-16">
-            <div className="w-full md:w-[70%] ">
-              <Courses />
-            </div>
-            <div className="bg-green-200 w-full md:w-[30%] p-4">
-              <Cart />
-            </div>
-          </div>
+        <div className="container mx-auto max-sm:px-4 flex flex-col md:flex-row gap-6 my-10 md:my-16">
+          <Courses />
+          <Cart />
         </div>
       </div>
     </>
