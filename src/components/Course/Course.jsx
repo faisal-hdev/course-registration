@@ -7,7 +7,7 @@ const Course = ({ course, handleCourseSelection }) => {
   const { name, photo, price, credit, description } = course;
 
   return (
-    <div className="card bg-base-100 shadow-lg border-2 border-gray-300">
+    <div className="card flex justify-between bg-base-100 shadow-lg border-2 border-gray-300">
       <figure>
         <img className="w-full h-full" src={photo} alt="Shoes" />
       </figure>
